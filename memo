@@ -1,0 +1,30 @@
+https://qiita.com/Kta-M/items/ce475c0063d3d3f36d5d
+
+kubectl:
+brew install kubectl
+https://kubernetes.io/ja/docs/tasks/tools/install-kubectl/#%E4%BB%96%E3%81%AE%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%A6%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B
+
+iam-user-authenticator:
+brew install aws-iam-authenticator
+
+eksctl:
+brew tap weaveworks/tap
+brew install weaveworks/tap/eksctl
+
+:k8sで使用するコンテキストの設定
+kubectl config use-context docker-for-desktop
+
+:コンテキストの確認
+kubectl config use-context
+
+利用している設定の確認
+:kubectl config view
+
+:podの確認
+kubectl get pods --namespace=kube-system
+
+:名前空間の追加
+kubectl create namespace ingress-nginx
+
+:sample
+git clone https://github.com/kubernetes/examples.git
