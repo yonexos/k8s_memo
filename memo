@@ -28,3 +28,8 @@ kubectl create namespace ingress-nginx
 
 :sample
 git clone https://github.com/kubernetes/examples.git
+
+:deploymentとserviceがある
+
+
+
